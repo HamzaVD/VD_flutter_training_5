@@ -1,6 +1,5 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
-import 'package:name_generator/testing.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
@@ -97,14 +96,6 @@ class _RandomWordsState extends State<RandomWords> {
         ],
       ),
       body: _buildSuggestions(),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.of(context)
-              .push(MaterialPageRoute(builder: (context) => Testing()));
-        },
-        tooltip: 'Unit Testing',
-        child: Icon(Icons.laptop_chromebook),
-      ),
     );
   }
 
